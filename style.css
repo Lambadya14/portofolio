@@ -50,7 +50,6 @@ nav a {
   width: 100%;
   max-width: 35rem;
   aspect-ratio: 1/1; /* Menggunakan aspect-ratio modern sebagai pengganti padding-top */
-  margin: 0 auto;
 }
 
 .profile-image {

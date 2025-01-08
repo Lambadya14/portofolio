@@ -1,0 +1,24 @@
+Mengubah warna website. gunakan warna SOFT/MODERN/POPULAR agar tampak lebih tenang
+
+1. Navbar
+    Buat humberger button
+    Klik 2 kali pada V4Victor maka warna website akan berubah
+
+2. Hero
+    Perbaiki padding pada tampilan mobile
+    membuat typewritter effect css
+    ganti foto dengan self 3d
+
+3. current projects
+    buat animasi masing-masing card left atau right
+
+4. Sklills
+    masing-masing ujung slide memiliki efek blur
+    hover akan berhenti
+    jika swipe ke kanan maka arah slide akan ke kanan. dan berlaku sebaliknya
+
+5. Journals
+    gunakan referensi dari design.jpg atau bisa lebih kreatif dengan referensi Pinterest
+
+6. Social Media
+    membuat navbar yang kreatif, elegan, rapi, dan clean

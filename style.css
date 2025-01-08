@@ -47,14 +47,15 @@ nav a {
 }
 .ink-container {
   position: relative;
-  width: 35rem;
-  height: 30rem;
-  margin-top: -2rem;
+  width: 100%;
+  max-width: 35rem;
+  aspect-ratio: 1/1; /* Menggunakan aspect-ratio modern sebagai pengganti padding-top */
+  margin: 0 auto;
 }
 
 .profile-image {
   position: absolute;
-  inset: 0;
+  inset: 0; /* Menggunakan inset untuk memastikan posisi tepat */
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -67,10 +68,12 @@ nav a {
   object-fit: cover;
   mask-image: url("brusheffect.png");
   -webkit-mask-image: url("brusheffect.png");
-  mask-size: cover;
-  -webkit-mask-size: cover;
+  mask-size: 100% 100%; /* Memastikan mask sesuai ukuran */
+  -webkit-mask-size: 100% 100%;
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-position: center;
 }
 
 .ink-effect {
@@ -79,8 +82,28 @@ nav a {
   width: 100%;
   height: 100%;
   background-image: url("brusheffect.png");
-  background-size: cover;
+  background-size: 100% 100%; /* Memastikan background sesuai ukuran */
+  background-position: center;
   opacity: 0;
   mix-blend-mode: multiply;
   border-radius: 50%;
+}
+
+/* Media Queries yang Dioptimasi */
+@media screen and (max-width: 480px) {
+  .ink-container {
+    max-width: 90vw;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .ink-container {
+    max-width: 60vw;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .ink-container {
+    max-width: 35rem; /* Ukuran tetap untuk desktop */
+  }
 }
